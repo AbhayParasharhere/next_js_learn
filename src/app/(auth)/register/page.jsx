@@ -1,3 +1,12 @@
+"use client";
+import {useRouter} from "next/navigation";
+
 export default function Register() {
-  return <div>Register</div>;
+  const router = useRouter();
+  return (
+    <div>
+      Register
+      <button onClick={() => router.back()}>BACK</button>
+    </div>
+  );
 }
